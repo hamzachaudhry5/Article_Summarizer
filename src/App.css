@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
+
+.head_text {
+  @apply mt-12 text-5xl font-extrabold leading-tight text-black text-center;
+}
+.article_summary{
+  @apply mt-12 mb-3 text-2xl font-extrabold leading-tight text-black text-left;
+
+}
+.blue_gradient {
+  @apply bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent;
+
+}
+.purple_gradient {
+  @apply bg-gradient-to-b from-orange-500 to-yellow-300 bg-clip-text text-transparent;
+}
+
+.description {
+  @apply mt-5 text-lg text-gray-600 sm:text-xl text-center max-w-2xl;
+}
+
+.url_input {
+  @apply block w-full rounded-xl border border-gray-200 bg-white py-2.5 pl-10 pr-12 text-sm shadow-lg font-satoshi font-medium focus:border-black focus:outline-none focus:ring-0;
+}
+
+.submit_btn {
+  @apply hover:border-gray-700 hover:text-gray-700 absolute inset-y-0 right-0 my-1.5 mr-1.5 flex w-10 items-center justify-center rounded border border-gray-200 font-sans text-sm font-medium text-gray-400;
+} 
+
+
+.summary_box{
+  @apply rounded-md border border-gray-400  p-4;
+}
+
