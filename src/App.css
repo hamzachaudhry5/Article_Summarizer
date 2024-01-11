@@ -16,8 +16,8 @@
 .purple_gradient {
   @apply   @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent;
 }
-.purple_gradient {
-  @apply bg-gradient-to-b from-orange-500 to-yellow-300 bg-clip-text text-transparent;
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent;
 }
 
 .description {
