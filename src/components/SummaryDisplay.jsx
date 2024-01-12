@@ -11,20 +11,16 @@ const SummaryDisplay = () => {
     e.preventDefault();
   
     try {
-      // Make a GET request to the article extract and summarize API
-      const response = await axios.get('https://article-extractor-and-summarizer.p.rapidapi.com/summarize', {
+      // Make a GET request to express server
+      const response = await axios.get('http://localhost:3000/api/summarize', {
         params: {
           url: article.url,
           length: '3', 
         },
-        headers: {
-          'RapidAPI-Key': import.meta.env.VITE_RAPID_API_KEY,
-          'RapidAPI-Host': 'article-extractor-and-summarizer.p.rapidapi.com',
-        },
       });
   
       // Ensure response.data.summary is a string before setting it to the state
-      let summaryText;
+      let summaryText = response.data.summary;
       if (typeof response.data.summary === 'string') {
         summaryText = response.data.summary;
       } else {
